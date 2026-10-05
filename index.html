@@ -1,218 +1,1752 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Selaus Hemrom | Remote BPO, Virtual Assistant & Digital Marketing</title>
+  <title>Selaus Hemrom | Career Development & Digital Growth</title>
 
   <meta
     name="description"
-    content="Selaus Hemrom is a Bangladesh-based professional offering Remote BPO, Virtual Assistant, Data Entry, Web Research, Lead Generation, Administrative Support and Digital Marketing services."
-  >
+    content="Selaus Hemrom - Career Development, Employment Support, Project Coordination, Data Quality, Digital Marketing and Remote Business Support Professional."
+  />
 
   <meta
     name="keywords"
-    content="Remote BPO, Virtual Assistant, Data Entry, Web Research, Lead Generation, Digital Marketing, Bangladesh, Selaus Hemrom"
-  >
+    content="Selaus Hemrom, Career Development, Employment, UCEP, Project Coordination, Digital Marketing, Data Quality, Remote BPO, Virtual Assistant, Data Entry"
+  />
 
-  <meta name="author" content="Selaus Hemrom">
+  <meta name="author" content="Selaus Hemrom" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
     rel="stylesheet"
-  >
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- =========================================================
+       CAREER ACHIEVEMENT & PROMOTION PORTFOLIO STYLES
+       Existing website styles remain in style.css
+       ========================================================= -->
+  <style>
+
+    /* Career Section */
+    .career-achievement-section {
+      background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.07), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(16, 185, 129, 0.06), transparent 28%),
+        #f8fafc;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .career-achievement-section::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 1px solid rgba(37, 99, 235, 0.08);
+      right: -150px;
+      top: 80px;
+    }
+
+    .career-achievement-section .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .career-intro {
+      max-width: 850px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .career-intro p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #64748b;
+      margin-top: 18px;
+    }
+
+    .career-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .career-highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .career-highlight-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 27px 23px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.04);
+    }
+
+    .career-highlight-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      border-color: #cbd5e1;
+    }
+
+    .career-number {
+      font-size: 12px;
+      font-weight: 800;
+      color: #2563eb;
+      margin-bottom: 15px;
+      letter-spacing: 0.08em;
+    }
+
+    .career-highlight-card h3 {
+      font-size: 19px;
+      margin: 0 0 10px;
+      color: #0f172a;
+    }
+
+    .career-highlight-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
+      margin: 0;
+    }
+
+    /* Dashboard */
+    .career-dashboard {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 25px;
+      padding: 45px;
+      margin-bottom: 50px;
+      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .career-dashboard::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      right: -100px;
+      top: -100px;
+    }
+
+    .dashboard-heading {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 30px;
+    }
+
+    .dashboard-heading span {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #93c5fd;
+      margin-bottom: 8px;
+    }
+
+    .dashboard-heading h3 {
+      margin: 0;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .career-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .career-metric {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 17px;
+      padding: 25px 20px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .career-metric strong {
+      display: block;
+      font-size: 35px;
+      line-height: 1;
+      margin-bottom: 9px;
+    }
+
+    .career-metric span {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* Panels */
+    .career-two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .career-panel {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.04);
+    }
+
+    .career-panel-header {
+      margin-bottom: 23px;
+    }
+
+    .career-panel-header span {
+      font-size: 11px;
+      font-weight: 800;
+      color: #2563eb;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .career-panel-header h3 {
+      margin: 7px 0 0;
+      font-size: 23px;
+      color: #0f172a;
+    }
+
+    .career-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .career-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 11px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      line-height: 1.65;
+      color: #475569;
+    }
+
+    .career-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .career-list li::before {
+      content: "✓";
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 1px;
+    }
+
+    /* Roadmap */
+    .career-roadmap-wrapper {
+      margin-bottom: 50px;
+    }
+
+    .career-roadmap {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .career-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .career-step-box {
+      padding: 20px 12px;
+      border: 1px solid #dbeafe;
+      background: #ffffff;
+      border-radius: 15px;
+      min-height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    }
+
+    .career-step-number {
+      font-size: 10px;
+      font-weight: 800;
+      color: #2563eb;
+      margin-bottom: 7px;
+    }
+
+    .career-step-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .career-arrow {
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    /* Achievement Log */
+    .achievement-log-wrapper {
+      margin-bottom: 50px;
+    }
+
+    .achievement-log {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.04);
+    }
+
+    .achievement-log th,
+    .achievement-log td {
+      padding: 17px 18px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    .achievement-log th {
+      background: #f8fafc;
+      color: #334155;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .achievement-log td {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .achievement-log tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .achievement-status {
+      display: inline-flex;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    /* Evidence Framework */
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .evidence-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .evidence-card h4 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      color: #0f172a;
+    }
+
+    .evidence-card p {
+      margin: 0;
+      color: #64748b;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .career-cta {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: #ffffff;
+      border-radius: 23px;
+      padding: 45px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .career-cta h3 {
+      color: #ffffff;
+      font-size: 28px;
+      margin: 0 0 12px;
+    }
+
+    .career-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #dbeafe;
+      line-height: 1.7;
+    }
+
+    .career-cta .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 23px;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #1e3a8a;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .career-highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .career-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .career-roadmap {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .career-arrow {
+        display: none;
+      }
+
+      .evidence-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .career-dashboard,
+      .career-cta {
+        padding: 30px 20px;
+      }
+
+      .career-two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .career-highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .career-metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .evidence-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .achievement-log {
+        display: block;
+        overflow-x: auto;
+      }
+
+      .career-dashboard {
+        border-radius: 18px;
+      }
+
+      .career-cta {
+        border-radius: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .career-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .career-metric strong {
+        font-size: 30px;
+      }
+
+      .career-panel {
+        padding: 23px;
+      }
+    }
+
+  </style>
 </head>
+
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
 
-  <header class="site-header" id="home">
-
-    <div class="container nav-wrap">
-
-      <a href="#home" class="brand">
-
-        <span class="brand-mark">SH</span>
-
-        <span class="brand-text">
-          <strong>SELAUS HEMROM</strong>
-          <small>Remote Work • BPO • Digital</small>
-        </span>
-
+      <a href="#home" class="logo">
+        <span>Selaus</span> Hemrom
       </a>
 
-      <button
-        class="menu-btn"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-      >
+      <button class="nav-toggle" aria-label="Toggle navigation">
         ☰
       </button>
 
-      <nav>
+      <nav class="main-nav">
 
         <a href="#about">About</a>
-        <a href="#remote-services">Remote Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
 
-        <a
-          href="mailto:hemromselaus@gmail.com?subject=Remote%20Work%20Opportunity"
-          class="nav-cta"
-        >
+        <a href="#remote-services">
+          Remote Services
+        </a>
+
+        <a href="#portfolio">
+          Portfolio
+        </a>
+
+        <a href="#career-achievements">
+          Career Achievements
+        </a>
+
+        <a href="#experience">
+          Experience
+        </a>
+
+        <a href="#skills">
+          Skills
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+        <a href="#contact" class="nav-cta">
           Hire Me
         </a>
 
       </nav>
 
     </div>
-
   </header>
 
 
-  <main>
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+  <main id="home">
 
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
+    <section class="hero section">
 
       <div class="container hero-grid">
 
         <div class="hero-content">
 
-          <div class="remote-available">
-            <span>●</span>
+          <div class="eyebrow">
             AVAILABLE FOR REMOTE WORK
           </div>
 
-          <p class="eyebrow">
-            REMOTE BPO • VIRTUAL ASSISTANT • DATA ENTRY • DIGITAL MARKETING
-          </p>
-
           <h1>
-            Reliable Remote Support.
-            <span>Professional Digital Skills.</span>
+            Build Digital Skills.
+            <span>Grow Your Career.</span>
           </h1>
 
-          <p class="hero-lead">
-
-            I am <strong>Selaus Hemrom</strong>, a Bangladesh-based professional
-            with 11+ years of experience in employment services, project
-            coordination, documentation, reporting, employer engagement,
-            training and digital work.
-
+          <p>
+            Career Development & Digital Growth Specialist with
+            11+ years of professional experience in employment support,
+            project coordination, data quality, digital marketing,
+            training and remote business support.
           </p>
-
-          <p class="hero-lead">
-
-            I am open to <strong>remote full-time, part-time and freelance
-            opportunities</strong> in BPO, Virtual Assistance, Data Entry,
-            Web Research, Lead Generation, Administrative Support and Digital
-            Marketing.
-
-          </p>
-
 
           <div class="hero-actions">
 
-            <a
-              href="mailto:hemromselaus@gmail.com?subject=Remote%20Work%20Opportunity"
-              class="btn btn-primary"
-            >
-              Hire Me for Remote Work
+            <a href="#career-achievements" class="btn btn-primary">
+              View Career Achievements →
             </a>
 
-            <a href="#remote-services" class="btn btn-ghost">
-              View My Services →
+            <a href="#contact" class="btn btn-secondary">
+              Hire Me
             </a>
 
           </div>
-
 
           <div class="hero-trust">
 
             <span>✓ Remote Ready</span>
-            <span>✓ Bangladesh Based</span>
             <span>✓ English & Bengali</span>
-            <span>✓ Flexible Schedule</span>
+            <span>✓ Professional Experience</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="hero-card-top">
+            <span>Professional Profile</span>
+            <span>2026</span>
+          </div>
+
+          <h3>
+            Career Development & Digital Growth Specialist
+          </h3>
+
+          <p>
+            Employment • Inclusion • Project Coordination •
+            Data Quality • Digital Marketing • Remote Support
+          </p>
+
+          <div class="hero-mini-grid">
+
+            <div>
+              <strong>11+</strong>
+              <span>Years Experience</span>
+            </div>
+
+            <div>
+              <strong>1,900+</strong>
+              <span>Youth Reached</span>
+            </div>
+
+            <div>
+              <strong>500+</strong>
+              <span>Placements</span>
+            </div>
+
+            <div>
+              <strong>200+</strong>
+              <span>Employer Partnerships</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ABOUT
+         ======================================================= -->
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            ABOUT ME
+          </span>
+
+          <h2>
+            Career Development & Digital Growth Professional
+          </h2>
+
+          <p>
+            I work at the intersection of employment support,
+            youth development, project coordination, data quality
+            and digital growth.
+          </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-content">
+
+            <p>
+              I have more than 11 years of professional experience
+              working in development programmes, employment support,
+              training, project coordination, documentation,
+              reporting, data management and stakeholder engagement.
+            </p>
+
+            <p>
+              My current work focuses on inclusion and employment,
+              trainee support, employer engagement, placement linkage,
+              career counselling and employment-related coordination.
+            </p>
+
+            <p>
+              Alongside my development-sector career, I am building
+              practical capabilities in digital marketing, social
+              media management, lead generation, web research,
+              virtual assistance and online business support.
+            </p>
 
           </div>
 
 
-          <div class="hero-socials">
+          <div class="about-highlights">
 
-            <a
-              href="https://www.linkedin.com/in/selaus-hemrom/"
-              target="_blank"
-              rel="noopener"
-            >
-              LinkedIn
-            </a>
+            <div class="highlight-box">
+              <strong>12+</strong>
+              <span>Professional Experience</span>
+            </div>
 
-            <a
-              href="https://www.upwork.com/freelancers/~01222e57af9a19b006"
-              target="_blank"
-              rel="noopener"
-            >
-              Upwork
-            </a>
+            <div class="highlight-box">
+              <strong>1,900+</strong>
+              <span>Youth Reached</span>
+            </div>
 
-            <a
-              href="https://selausacademy.com/"
-              target="_blank"
-              rel="noopener"
-            >
-              Selaus Academy
-            </a>
+            <div class="highlight-box">
+              <strong>500+</strong>
+              <span>Placement Support</span>
+            </div>
+
+            <div class="highlight-box">
+              <strong>200+</strong>
+              <span>Employer Partnerships</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         REMOTE SERVICES
+         ======================================================= -->
+    <section class="section section-light" id="remote-services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            REMOTE SERVICES
+          </span>
+
+          <h2>
+            Practical Support for Remote Teams
+          </h2>
+
+          <p>
+            Reliable support for data, administration,
+            research, digital marketing and online business tasks.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <h3>Data Entry</h3>
+            <p>
+              Accurate data entry, spreadsheet management,
+              record updating and data organization.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Virtual Assistant</h3>
+            <p>
+              Administrative assistance, task coordination,
+              documentation and online support.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Web Research</h3>
+            <p>
+              Online research, information collection,
+              verification and structured reporting.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Lead Generation</h3>
+            <p>
+              Prospect research, lead list building and
+              business information collection.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Administrative Support</h3>
+            <p>
+              Documentation, Excel, Google Workspace,
+              reporting and coordination support.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Digital Marketing</h3>
+            <p>
+              Social media, Meta Ads, Google Ads,
+              content and lead generation support.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Social Media Support</h3>
+            <p>
+              Page management, content planning,
+              audience engagement and reporting.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Customer & Client Support</h3>
+            <p>
+              Professional communication, follow-up,
+              coordination and customer-facing support.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>Google Workspace & MS Office</h3>
+            <p>
+              Documents, spreadsheets, presentations,
+              email and cloud-based workflow support.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         WHY WORK WITH ME
+         ======================================================= -->
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            WHY WORK WITH ME
+          </span>
+
+          <h2>
+            Professional, Practical & Result-Oriented
+          </h2>
+
+        </div>
+
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <h3>Professional Experience</h3>
+            <p>
+              More than a decade of experience across development,
+              employment and digital work.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Reliable Coordination</h3>
+            <p>
+              Strong experience coordinating trainees,
+              employers, teams and stakeholders.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Data-Focused</h3>
+            <p>
+              Comfortable with data collection, verification,
+              documentation and reporting.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Remote Ready</h3>
+            <p>
+              Able to support distributed teams through
+              online tools and structured workflows.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DIGITAL MARKETING
+         ======================================================= -->
+    <section class="section section-light" id="digital-marketing">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            DIGITAL MARKETING
+          </span>
+
+          <h2>
+            Digital Growth & Online Business
+          </h2>
+
+          <p>
+            Practical experience in social media, advertising,
+            content, lead generation and online learning.
+          </p>
+
+        </div>
+
+
+        <div class="skills-cloud">
+
+          <span>Meta Ads</span>
+          <span>Google Ads</span>
+          <span>Facebook Marketing</span>
+          <span>Instagram</span>
+          <span>Canva</span>
+          <span>WordPress</span>
+          <span>Content Writing</span>
+          <span>Social Media</span>
+          <span>Lead Generation</span>
+
+        </div>
+
+
+        <div class="digital-projects">
+
+          <div class="project-card">
+
+            <h3>
+              Selaus Digital Solutions
+            </h3>
+
+            <p>
+              Digital marketing and social media support
+              initiative focused on helping local businesses
+              improve their online presence.
+            </p>
 
             <a
               href="https://selaus-digital-solutions.netlify.app/"
               target="_blank"
               rel="noopener"
             >
-              Digital Solutions
+              Visit Project →
+            </a>
+
+          </div>
+
+
+          <div class="project-card">
+
+            <h3>
+              Selaus Academy
+            </h3>
+
+            <p>
+              Online-first practical learning initiative focused
+              on digital skills, freelancing and career growth.
+            </p>
+
+            <a
+              href="https://selausacademy.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              Visit Academy →
             </a>
 
           </div>
 
         </div>
 
+      </div>
 
-        <div class="hero-visual">
+    </section>
 
-          <div class="hero-card">
 
-            <div class="portrait-frame">
+    <!-- =======================================================
+         CAREER ACHIEVEMENT & PROMOTION PORTFOLIO
+         ======================================================= -->
+    <section
+      class="section career-achievement-section"
+      id="career-achievements"
+    >
 
-              <img
-                src="profile.jpg.png"
-                alt="Selaus Hemrom - Remote BPO and Digital Marketing Professional"
-              >
+      <div class="container">
 
-              <div class="portrait-badge">
 
-                <strong>11+</strong>
-                <span>Years Professional Experience</span>
+        <!-- INTRO -->
+        <div class="career-intro">
+
+          <span class="career-label">
+            CAREER ACHIEVEMENT & PROFESSIONAL GROWTH • 2026–27
+          </span>
+
+          <h2>
+            Evidence of Impact, Leadership & Readiness for the Next Level
+          </h2>
+
+          <p>
+            This section presents my professional contribution,
+            responsibilities, measurable impact, stakeholder engagement,
+            data and reporting capabilities, continuous learning and
+            development priorities as part of my professional growth
+            and promotion-readiness portfolio.
+          </p>
+
+        </div>
+
+
+        <!-- FOUR KEY AREAS -->
+        <div class="career-highlight-grid">
+
+          <div class="career-highlight-card">
+
+            <div class="career-number">
+              01
+            </div>
+
+            <h3>
+              Programme & Employment
+            </h3>
+
+            <p>
+              Supporting trainees and job seekers through employment
+              services, career counselling, placement linkage,
+              follow-up and inclusion-focused activities.
+            </p>
+
+          </div>
+
+
+          <div class="career-highlight-card">
+
+            <div class="career-number">
+              02
+            </div>
+
+            <h3>
+              Stakeholder Leadership
+            </h3>
+
+            <p>
+              Coordinating with employers, trainees, programme teams
+              and external stakeholders to strengthen employment
+              opportunities and programme implementation.
+            </p>
+
+          </div>
+
+
+          <div class="career-highlight-card">
+
+            <div class="career-number">
+              03
+            </div>
+
+            <h3>
+              Data & Reporting
+            </h3>
+
+            <p>
+              Maintaining employment-related information, verifying
+              data, documenting activities and supporting accurate
+              reporting and management decisions.
+            </p>
+
+          </div>
+
+
+          <div class="career-highlight-card">
+
+            <div class="career-number">
+              04
+            </div>
+
+            <h3>
+              Continuous Improvement
+            </h3>
+
+            <p>
+              Developing stronger capabilities in Excel, data analysis,
+              dashboards, project management, MEAL and professional
+              communication.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROFESSIONAL IMPACT DASHBOARD -->
+        <div class="career-dashboard">
+
+          <div class="dashboard-heading">
+
+            <span>
+              Professional Impact Dashboard
+            </span>
+
+            <h3>
+              Career Experience & Contribution Snapshot
+            </h3>
+
+          </div>
+
+
+          <div class="career-metrics">
+
+            <div class="career-metric">
+
+              <strong>
+                11+
+              </strong>
+
+              <span>
+                Years of Professional Experience
+              </span>
+
+            </div>
+
+
+            <div class="career-metric">
+
+              <strong>
+                1,900+
+              </strong>
+
+              <span>
+                Youth Reached Through Training & Development
+              </span>
+
+            </div>
+
+
+            <div class="career-metric">
+
+              <strong>
+                500+
+              </strong>
+
+              <span>
+                Placement / Employment Support
+              </span>
+
+            </div>
+
+
+            <div class="career-metric">
+
+              <strong>
+                200+
+              </strong>
+
+              <span>
+                Employer / Industry Partnerships
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RESPONSIBILITIES + NEXT LEVEL -->
+        <div class="career-two-column">
+
+
+          <div class="career-panel">
+
+            <div class="career-panel-header">
+
+              <span>
+                Current Contribution
+              </span>
+
+              <h3>
+                Key Responsibilities
+              </h3>
+
+            </div>
+
+
+            <ul class="career-list">
+
+              <li>
+                Employment and inclusion support for trainees and job seekers.
+              </li>
+
+              <li>
+                Employer communication, engagement and placement linkage.
+              </li>
+
+              <li>
+                Career counselling, interview preparation and follow-up.
+              </li>
+
+              <li>
+                Project coordination, documentation and official reporting.
+              </li>
+
+              <li>
+                Data collection, verification and employment tracking.
+              </li>
+
+              <li>
+                Training, facilitation and stakeholder coordination.
+              </li>
+
+              <li>
+                Supporting employer committees and employment-related initiatives.
+              </li>
+
+              <li>
+                Maintaining professional communication with trainees,
+                employers and programme stakeholders.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="career-panel">
+
+            <div class="career-panel-header">
+
+              <span>
+                Professional Development
+              </span>
+
+              <h3>
+                Next-Level Readiness
+              </h3>
+
+            </div>
+
+
+            <ul class="career-list">
+
+              <li>
+                Advanced Excel, data analysis and dashboard development.
+              </li>
+
+              <li>
+                Power BI and management information systems.
+              </li>
+
+              <li>
+                Project management, work planning and risk management.
+              </li>
+
+              <li>
+                MEAL, data quality and evidence-based reporting.
+              </li>
+
+              <li>
+                Leadership, team coordination and stakeholder management.
+              </li>
+
+              <li>
+                Management-level reporting and professional presentations.
+              </li>
+
+              <li>
+                Stronger digital tools and technology-enabled workflows.
+              </li>
+
+              <li>
+                Building a documented evidence base for performance review
+                and career progression.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- CAREER ROADMAP -->
+        <div class="career-roadmap-wrapper">
+
+          <div class="section-heading">
+
+            <span class="eyebrow">
+              CAREER ROADMAP
+            </span>
+
+            <h2>
+              Professional Growth Pathway
+            </h2>
+
+            <p>
+              A structured career pathway based on increasing
+              responsibility, leadership, technical capability and
+              programme management exposure.
+            </p>
+
+          </div>
+
+
+          <div class="career-roadmap">
+
+
+            <div class="career-step">
+
+              <div class="career-step-box">
+
+                <div class="career-step-number">
+                  STEP 01
+                </div>
+
+                <div class="career-step-title">
+                  Officer
+                </div>
+
+              </div>
+
+              <span class="career-arrow">
+                →
+              </span>
+
+            </div>
+
+
+            <div class="career-step">
+
+              <div class="career-step-box">
+
+                <div class="career-step-number">
+                  STEP 02
+                </div>
+
+                <div class="career-step-title">
+                  Senior Officer
+                </div>
+
+              </div>
+
+              <span class="career-arrow">
+                →
+              </span>
+
+            </div>
+
+
+            <div class="career-step">
+
+              <div class="career-step-box">
+
+                <div class="career-step-number">
+                  STEP 03
+                </div>
+
+                <div class="career-step-title">
+                  Project Coordinator
+                </div>
+
+              </div>
+
+              <span class="career-arrow">
+                →
+              </span>
+
+            </div>
+
+
+            <div class="career-step">
+
+              <div class="career-step-box">
+
+                <div class="career-step-number">
+                  STEP 04
+                </div>
+
+                <div class="career-step-title">
+                  Assistant Manager
+                </div>
+
+              </div>
+
+              <span class="career-arrow">
+                →
+              </span>
+
+            </div>
+
+
+            <div class="career-step">
+
+              <div class="career-step-box">
+
+                <div class="career-step-number">
+                  STEP 05
+                </div>
+
+                <div class="career-step-title">
+                  Manager
+                </div>
 
               </div>
 
             </div>
 
+          </div>
 
-            <div class="hero-card-bottom">
+        </div>
 
-              <span>Chattogram, Bangladesh</span>
-              <span>Remote Work Ready</span>
+
+        <!-- ACHIEVEMENT TRACKER -->
+        <div class="achievement-log-wrapper">
+
+          <div class="section-heading">
+
+            <span class="eyebrow">
+              2026–27 ACHIEVEMENT TRACKER
+            </span>
+
+            <h2>
+              Evidence Log & Professional Growth Plan
+            </h2>
+
+            <p>
+              This tracker can be updated monthly with verified
+              achievements, outputs, outcomes and supporting evidence.
+            </p>
+
+          </div>
+
+
+          <div style="overflow-x:auto;">
+
+            <table class="achievement-log">
+
+              <thead>
+
+                <tr>
+
+                  <th>
+                    Period
+                  </th>
+
+                  <th>
+                    Focus Area
+                  </th>
+
+                  <th>
+                    Planned / Completed Evidence
+                  </th>
+
+                  <th>
+                    Status
+                  </th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+                    October 2026
+                  </td>
+
+                  <td>
+                    Employment & Employer Engagement
+                  </td>
+
+                  <td>
+                    Document employer communication, trainee placement
+                    follow-up, interviews, internship linkage and
+                    employment-related coordination.
+                  </td>
+
+                  <td>
+                    <span class="achievement-status">
+                      In Progress
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    November 2026
+                  </td>
+
+                  <td>
+                    EDT / Training & Coordination
+                  </td>
+
+                  <td>
+                    Record training coordination, participant support,
+                    attendance, documentation, stakeholder communication
+                    and outcomes.
+                  </td>
+
+                  <td>
+                    <span class="achievement-status">
+                      Planned
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    December 2026
+                  </td>
+
+                  <td>
+                    Annual Review & Evidence Building
+                  </td>
+
+                  <td>
+                    Consolidate achievements, employment outcomes,
+                    employer engagement, reports, learning activities
+                    and performance evidence.
+                  </td>
+
+                  <td>
+                    <span class="achievement-status">
+                      Planned
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    Q1 2027
+                  </td>
+
+                  <td>
+                    Data & Management Skills
+                  </td>
+
+                  <td>
+                    Strengthen Excel, dashboard, data analysis,
+                    reporting and management-information capabilities.
+                  </td>
+
+                  <td>
+                    <span class="achievement-status">
+                      Development
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    2027
+                  </td>
+
+                  <td>
+                    Leadership & Career Progression
+                  </td>
+
+                  <td>
+                    Demonstrate increasing ownership, coordination,
+                    problem solving, stakeholder management and
+                    evidence-based decision support.
+                  </td>
+
+                  <td>
+                    <span class="achievement-status">
+                      Long-Term
+                    </span>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+
+        <!-- EVIDENCE FRAMEWORK -->
+        <div class="evidence-grid">
+
+
+          <div class="evidence-card">
+
+            <h4>
+              📊 Quantitative Evidence
+            </h4>
+
+            <p>
+              Monthly placement numbers, employer contacts,
+              trainees supported, interviews coordinated,
+              internships, training participants and follow-up data.
+            </p>
+
+          </div>
+
+
+          <div class="evidence-card">
+
+            <h4>
+              📁 Documentation Evidence
+            </h4>
+
+            <p>
+              Reports, official notices, meeting records,
+              employer communication, attendance records,
+              dashboards, trackers and work plans.
+            </p>
+
+          </div>
+
+
+          <div class="evidence-card">
+
+            <h4>
+              🏆 Quality & Leadership Evidence
+            </h4>
+
+            <p>
+              Examples of problem solving, process improvement,
+              stakeholder coordination, initiative, mentoring,
+              ownership and successful task completion.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROMOTION READINESS -->
+        <div class="career-panel" style="margin-bottom:50px;">
+
+          <div class="career-panel-header">
+
+            <span>
+              Promotion Readiness Framework
+            </span>
+
+            <h3>
+              From Task Execution to Greater Ownership
+            </h3>
+
+          </div>
+
+
+          <div class="career-two-column" style="margin-bottom:0;">
+
+            <div>
+
+              <ul class="career-list">
+
+                <li>
+                  Deliver assigned responsibilities accurately and on time.
+                </li>
+
+                <li>
+                  Take ownership of employment and stakeholder-related tasks.
+                </li>
+
+                <li>
+                  Maintain high-quality documentation and data.
+                </li>
+
+                <li>
+                  Identify operational challenges and propose practical solutions.
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div>
+
+              <ul class="career-list">
+
+                <li>
+                  Support team planning, monitoring and reporting.
+                </li>
+
+                <li>
+                  Strengthen employer and external stakeholder relationships.
+                </li>
+
+                <li>
+                  Demonstrate leadership through coordination and initiative.
+                </li>
+
+                <li>
+                  Build evidence of readiness for higher-level responsibility.
+                </li>
+
+              </ul>
 
             </div>
 
@@ -220,487 +1754,26 @@
 
         </div>
 
-      </div>
 
-    </section>
-
-
-    <!-- ================= STATS ================= -->
-
-    <section class="stats">
-
-      <div class="container stats-grid">
-
-        <div>
-          <strong>11+</strong>
-          <span>Years Professional Experience</span>
-        </div>
-
-        <div>
-          <strong>1,900+</strong>
-          <span>Youth Supported</span>
-        </div>
-
-        <div>
-          <strong>500+</strong>
-          <span>Employment Placements</span>
-        </div>
-
-        <div>
-          <strong>200+</strong>
-          <span>Employer Partnerships</span>
-        </div>
-
-        <div>
-          <strong>Remote</strong>
-          <span>Full-Time • Part-Time • Freelance</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section" id="about">
-
-      <div class="container two-col">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">ABOUT ME</p>
-
-          <h2>
-            A dependable professional for remote teams.
-          </h2>
-
-        </div>
-
-
-        <div>
-
-          <p class="lead">
-
-            I combine more than 11 years of professional experience with
-            practical digital skills to support organizations, businesses,
-            entrepreneurs and remote teams.
-
-          </p>
-
-          <p>
-
-            My professional background includes employment services,
-            project coordination, documentation, reporting, employer
-            communication, data collection, training facilitation,
-            career support and stakeholder coordination.
-
-          </p>
-
-          <p>
-
-            Alongside my professional career, I have developed practical
-            capabilities in digital marketing, social media management,
-            Canva, WordPress, online research, lead generation,
-            content development, Google Workspace and Microsoft Office.
-
-          </p>
-
-          <p>
-
-            I am particularly interested in remote opportunities where
-            accuracy, communication, reliability, research ability and
-            digital skills are important.
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= REMOTE SERVICES ================= -->
-
-    <section class="section section-soft" id="remote-services">
-
-      <div class="container">
-
-        <div class="centered">
-
-          <p class="eyebrow">REMOTE WORK SERVICES</p>
-
-          <h2>
-            How I can support your company remotely.
-          </h2>
-
-          <p>
-            Practical remote support for BPO companies, agencies,
-            entrepreneurs, small businesses and online teams.
-          </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-
-          <article class="service-card">
-
-            <span>01</span>
-
-            <h3>Data Entry</h3>
-
-            <p>
-              Accurate data entry, spreadsheet updating, data organization
-              and document handling.
-            </p>
-
-            <div class="service-tags">
-              Excel • Google Sheets • Data Management
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>02</span>
-
-            <h3>Virtual Assistant</h3>
-
-            <p>
-              Administrative support, email handling, online research,
-              scheduling and routine digital tasks.
-            </p>
-
-            <div class="service-tags">
-              Admin • Email • Research
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>03</span>
-
-            <h3>Web Research</h3>
-
-            <p>
-              Company research, contact research, market research,
-              information collection and online verification.
-            </p>
-
-            <div class="service-tags">
-              Research • Verification • Data Collection
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>04</span>
-
-            <h3>Lead Generation</h3>
-
-            <p>
-              Business research, prospect list building, contact discovery
-              and lead database preparation.
-            </p>
-
-            <div class="service-tags">
-              B2B • Prospecting • Lists
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>05</span>
-
-            <h3>Administrative Support</h3>
-
-            <p>
-              Documentation, reporting, file organization, data tracking
-              and coordination support.
-            </p>
-
-            <div class="service-tags">
-              Reports • Documents • Coordination
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>06</span>
-
-            <h3>Digital Marketing</h3>
-
-            <p>
-              Social media, Meta Ads, content planning, Canva design
-              and digital marketing support.
-            </p>
-
-            <div class="service-tags">
-              Meta Ads • Social Media • Canva
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>07</span>
-
-            <h3>Social Media Support</h3>
-
-            <p>
-              Facebook and Instagram content support, basic campaign
-              planning and social media management.
-            </p>
-
-            <div class="service-tags">
-              Facebook • Instagram • Content
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>08</span>
-
-            <h3>Customer & Client Support</h3>
-
-            <p>
-              Professional communication, follow-up, information sharing
-              and client coordination.
-            </p>
-
-            <div class="service-tags">
-              Communication • Follow-up • Support
-            </div>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span>09</span>
-
-            <h3>Google Workspace & MS Office</h3>
-
-            <p>
-              Google Docs, Sheets, Drive, Gmail, Microsoft Word,
-              Excel and PowerPoint.
-            </p>
-
-            <div class="service-tags">
-              Google Workspace • Excel • Word
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= WHY WORK WITH ME ================= -->
-
-    <section class="section">
-
-      <div class="container">
-
-        <div class="centered">
-
-          <p class="eyebrow">WHY WORK WITH ME</p>
-
-          <h2>
-            Professional, adaptable and focused on reliable support.
-          </h2>
-
-        </div>
-
-
-        <div class="remote-benefits">
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Professional Experience</h3>
-
-            <p>
-              11+ years working with organizations, employers,
-              youth, teams and stakeholders.
-            </p>
-
-          </article>
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Data & Documentation</h3>
-
-            <p>
-              Strong experience with reporting, documentation,
-              data collection and coordination.
-            </p>
-
-          </article>
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Digital Skills</h3>
-
-            <p>
-              Digital marketing, social media, Canva, WordPress
-              and online productivity tools.
-            </p>
-
-          </article>
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Communication</h3>
-
-            <p>
-              Professional communication with employers, clients,
-              trainees and project stakeholders.
-            </p>
-
-          </article>
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Remote Ready</h3>
-
-            <p>
-              Comfortable working independently with online
-              communication and collaboration tools.
-            </p>
-
-          </article>
-
-
-          <article class="benefit-card">
-
-            <div class="benefit-icon">✓</div>
-
-            <h3>Continuous Learning</h3>
-
-            <p>
-              Actively developing new digital, AI and online-work skills.
-            </p>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= DIGITAL MARKETING ================= -->
-
-    <section class="section academy-section">
-
-      <div class="container academy-grid">
-
-        <div class="academy-copy">
-
-          <p class="eyebrow">DIGITAL MARKETING</p>
-
-          <h2>
-            Digital skills that complement my remote support services.
-          </h2>
-
-          <p>
-
-            In addition to BPO and administrative support, I have practical
-            experience with digital marketing, social media, Meta Ads,
-            Google Ads, Canva, content planning and online business support.
-
-          </p>
-
-
-          <div class="pill-list">
-
-            <span>Meta Ads</span>
-            <span>Google Ads</span>
-            <span>Facebook Marketing</span>
-            <span>Instagram</span>
-            <span>Canva</span>
-            <span>WordPress</span>
-            <span>Content Writing</span>
-            <span>Social Media</span>
-            <span>Lead Generation</span>
-
-          </div>
-
-
-          <a
-            href="https://selaus-digital-solutions.netlify.app/"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-light"
-          >
-            View Digital Solutions →
-          </a>
-
-        </div>
-
-
-        <div class="orientation-card">
-
-          <p class="live-dot">
-            SELAUS ACADEMY
-          </p>
+        <!-- CTA -->
+        <div class="career-cta">
 
           <h3>
-            Practical Digital Skills & Career Learning
+            Professional Profile & Career Progression
           </h3>
 
           <p>
-
-            Selaus Academy provides practical learning resources around
-            digital marketing, freelancing, Canva, social media and
-            online career development.
-
+            This portfolio is designed as a living professional record.
+            Verified achievements, outputs, outcomes, certificates,
+            reports and supporting evidence can be added continuously
+            throughout 2026–27.
           </p>
 
-
           <a
-            href="https://selausacademy.com/"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-light"
+            href="#contact"
+            class="btn"
           >
-            Visit Selaus Academy →
+            Request Professional Profile
           </a>
 
         </div>
@@ -710,23 +1783,26 @@
     </section>
 
 
-    <!-- ================= PORTFOLIO ================= -->
-
+    <!-- =======================================================
+         PORTFOLIO
+         ======================================================= -->
     <section class="section" id="portfolio">
 
       <div class="container">
 
-        <div class="centered">
+        <div class="section-heading">
 
-          <p class="eyebrow">REMOTE WORK PORTFOLIO</p>
+          <span class="eyebrow">
+            PORTFOLIO
+          </span>
 
           <h2>
-            Examples of my professional capabilities.
+            Selected Work & Projects
           </h2>
 
           <p>
-            A combination of professional, administrative, employment,
-            digital marketing and online-work skills.
+            A collection of selected digital, training and
+            professional work.
           </p>
 
         </div>
@@ -735,158 +1811,123 @@
         <div class="portfolio-grid">
 
 
-          <article class="portfolio-item">
+          <div class="portfolio-card">
 
-            <a
-              href="Digital marketing work.svg"
-              target="_blank"
-              rel="noopener"
-            >
+            <img
+              src="Digital marketing work.svg"
+              alt="Digital Marketing Work"
+            />
 
-              <img
-                src="Digital marketing work.svg"
-                alt="Digital marketing work portfolio"
-              >
-
-            </a>
-
-            <div>
-
-              <span>DIGITAL MARKETING</span>
+            <div class="portfolio-card-content">
 
               <h3>
-                Social Media & Campaign Work
+                Digital Marketing Work
               </h3>
 
               <p>
-                Facebook, Instagram, Meta Ads, content planning
-                and digital marketing.
+                Social media marketing, digital advertising,
+                lead generation and online business support.
               </p>
 
             </div>
 
-          </article>
+          </div>
 
 
-          <article class="portfolio-item">
+          <div class="portfolio-card">
 
-            <a
-              href="Training photos.svg"
-              target="_blank"
-              rel="noopener"
-            >
+            <img
+              src="Training photos.svg"
+              alt="Training and Facilitation"
+            />
 
-              <img
-                src="Training photos.svg"
-                alt="Training and professional development"
-              >
-
-            </a>
-
-            <div>
-
-              <span>PROFESSIONAL SUPPORT</span>
+            <div class="portfolio-card-content">
 
               <h3>
-                Training & Coordination
+                Training & Facilitation
               </h3>
 
               <p>
-                Training facilitation, coordination, career support
-                and stakeholder communication.
+                Training, facilitation, youth development and
+                practical learning activities.
               </p>
 
             </div>
 
-          </article>
+          </div>
 
 
-          <article class="portfolio-item">
+          <div class="portfolio-card">
 
-            <a
-              href="Selaus Academy graphics.svg"
-              target="_blank"
-              rel="noopener"
-            >
+            <img
+              src="Selaus Academy graphics.svg"
+              alt="Selaus Academy"
+            />
 
-              <img
-                src="Selaus Academy graphics.svg"
-                alt="Selaus Academy digital project"
-              >
-
-            </a>
-
-            <div>
-
-              <span>DIGITAL PROJECT</span>
+            <div class="portfolio-card-content">
 
               <h3>
-                Online Business & Brand Development
+                Selaus Academy
               </h3>
 
               <p>
-                Website development, digital presence, content
-                and online business support.
+                Digital skills, freelancing, practical learning
+                and career development initiative.
               </p>
 
             </div>
 
-          </article>
+          </div>
 
 
-          <article class="portfolio-item">
+          <div class="portfolio-card">
 
-            <a
-              href="Certificates.svg"
-              target="_blank"
-              rel="noopener"
-            >
+            <img
+              src="Certificates.svg"
+              alt="Certificates and Training"
+            />
 
-              <img
-                src="Certificates.svg"
-                alt="Professional experience and certificates"
-              >
-
-            </a>
-
-            <div>
-
-              <span>EMPLOYMENT & TVET</span>
+            <div class="portfolio-card-content">
 
               <h3>
-                Employer & Industry Engagement
+                Certificates & Training
               </h3>
 
               <p>
-                Employer communication, industry visits, employment
-                coordination and reporting.
+                Professional learning, skills development and
+                continuous improvement.
               </p>
 
             </div>
 
-          </article>
+          </div>
 
 
-        </div>
+          <div class="portfolio-card">
 
+            <div class="portfolio-card-content">
 
-        <div class="portfolio-actions">
+              <h3>
+                Digital Marketing Portfolio
+              </h3>
 
-          <a
-            href="Selaus_Academy_Digital_Marketing_Portfolio.pdf"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-          >
-            📄 View Digital Marketing Portfolio
-          </a>
+              <p>
+                View the detailed Selaus Academy digital marketing
+                portfolio and selected work.
+              </p>
 
-          <a
-            href="mailto:hemromselaus@gmail.com?subject=Request%20for%20CV"
-            class="btn btn-ghost"
-          >
-            📥 Request My CV
-          </a>
+              <a
+                href="Selaus_Academy_Digital_Marketing_Portfolio.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                View PDF Portfolio →
+              </a>
+
+            </div>
+
+          </div>
+
 
         </div>
 
@@ -895,24 +1936,22 @@
     </section>
 
 
-    <!-- ================= EXPERIENCE ================= -->
+    <!-- =======================================================
+         EXPERIENCE
+         ======================================================= -->
+    <section class="section section-light" id="experience">
 
-    <section class="section section-soft" id="experience">
-
-      <div class="container two-col">
+      <div class="container">
 
         <div class="section-heading">
 
-          <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+          <span class="eyebrow">
+            EXPERIENCE
+          </span>
 
           <h2>
-            11+ years across employment, development, coordination and digital work.
+            Professional Journey
           </h2>
-
-          <p>
-            Experience that provides a strong foundation for remote
-            administrative, BPO and digital roles.
-          </p>
 
         </div>
 
@@ -920,83 +1959,135 @@
         <div class="timeline">
 
 
-          <article class="timeline-item">
+          <div class="timeline-item">
 
-            <span>2024 — PRESENT</span>
+            <div class="timeline-date">
+              2024 – Present
+            </div>
 
-            <h3>UCEP Bangladesh</h3>
+            <div class="timeline-content">
 
-            <strong>Officer – Inclusion, Employment & EDT</strong>
+              <h3>
+                Officer – Inclusion & Employment
+              </h3>
 
-            <p>
-              Employment services, employer engagement, documentation,
-              reporting, data collection, coordination and career support.
-            </p>
+              <h4>
+                UCEP Bangladesh
+              </h4>
 
-          </article>
+              <p>
+                Employment support, inclusion, trainee placement,
+                employer engagement, career counselling, coordination,
+                documentation and reporting.
+              </p>
 
+            </div>
 
-          <article class="timeline-item">
-
-            <span>2022 — 2024</span>
-
-            <h3>iDE Bangladesh</h3>
-
-            <strong>Field Facilitator</strong>
-
-            <p>
-              Youth engagement, facilitation, community development
-              and project implementation.
-            </p>
-
-          </article>
+          </div>
 
 
-          <article class="timeline-item">
+          <div class="timeline-item">
 
-            <span>2017 — 2021</span>
+            <div class="timeline-date">
+              2022 – 2024
+            </div>
 
-            <h3>Caritas Bangladesh</h3>
+            <div class="timeline-content">
 
-            <strong>Project Supervisor</strong>
+              <h3>
+                Officer – Business Development
+              </h3>
 
-            <p>
-              Team coordination, community mobilization, project
-              implementation, entrepreneurship and business development training.
-            </p>
+              <h4>
+                iDE Bangladesh
+              </h4>
 
-          </article>
+              <p>
+                Business development, entrepreneur support,
+                market linkage, field coordination and programme
+                implementation.
+              </p>
 
+            </div>
 
-          <article class="timeline-item">
-
-            <span>2016</span>
-
-            <h3>VSO Bangladesh</h3>
-
-            <strong>Volunteer</strong>
-
-            <p>
-              Youth engagement, volunteer coordination and community development.
-            </p>
-
-          </article>
+          </div>
 
 
-          <article class="timeline-item">
+          <div class="timeline-item">
 
-            <span>2014 — 2016</span>
+            <div class="timeline-date">
+              2017 – 2021
+            </div>
 
-            <h3>LAMB</h3>
+            <div class="timeline-content">
 
-            <strong>Field Facilitator</strong>
+              <h3>
+                Development Programme Roles
+              </h3>
 
-            <p>
-              Livelihood, awareness sessions, social development
-              and stakeholder coordination.
-            </p>
+              <h4>
+                Caritas Bangladesh
+              </h4>
 
-          </article>
+              <p>
+                Programme implementation, community engagement,
+                documentation, training and coordination.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              2016
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Development Programme Role
+              </h3>
+
+              <h4>
+                VSO Bangladesh
+              </h4>
+
+              <p>
+                Programme and community development support.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              2014 – 2016
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Development Programme Role
+              </h3>
+
+              <h4>
+                LAMB
+              </h4>
+
+              <p>
+                Programme support, community engagement,
+                documentation and field-level coordination.
+              </p>
+
+            </div>
+
+          </div>
 
 
         </div>
@@ -1006,51 +2097,143 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
-
+    <!-- =======================================================
+         SKILLS
+         ======================================================= -->
     <section class="section" id="skills">
 
       <div class="container">
 
-        <div class="centered">
+        <div class="section-heading">
 
-          <p class="eyebrow">CORE SKILLS</p>
+          <span class="eyebrow">
+            SKILLS
+          </span>
 
           <h2>
-            Skills for modern remote work.
+            Professional Skills
           </h2>
 
         </div>
 
 
-        <div class="skills">
+        <div class="skills-grid">
 
-          <span>Data Entry</span>
-          <span>Web Research</span>
-          <span>Lead Generation</span>
-          <span>Virtual Assistance</span>
-          <span>Administrative Support</span>
-          <span>Microsoft Excel</span>
-          <span>Google Sheets</span>
-          <span>Google Docs</span>
-          <span>Google Drive</span>
-          <span>Microsoft Word</span>
-          <span>PowerPoint</span>
-          <span>Email Communication</span>
-          <span>Data Collection</span>
-          <span>Documentation</span>
-          <span>Reporting</span>
-          <span>Project Coordination</span>
-          <span>Digital Marketing</span>
-          <span>Meta Ads</span>
-          <span>Google Ads</span>
-          <span>Facebook Marketing</span>
-          <span>Instagram Marketing</span>
-          <span>Canva</span>
-          <span>WordPress</span>
-          <span>Content Writing</span>
-          <span>Social Media Management</span>
-          <span>AI Productivity Tools</span>
+
+          <div class="skill-group">
+
+            <h3>
+              Career & Employment
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Career Counselling</span>
+              <span>Employment Support</span>
+              <span>Job Placement</span>
+              <span>Employer Engagement</span>
+              <span>Interview Preparation</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Project & Programme
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Project Coordination</span>
+              <span>Documentation</span>
+              <span>Reporting</span>
+              <span>Training</span>
+              <span>Stakeholder Coordination</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Data & Administration
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Excel</span>
+              <span>Data Quality</span>
+              <span>Data Entry</span>
+              <span>Google Workspace</span>
+              <span>MS Office</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Digital Marketing
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Meta Ads</span>
+              <span>Google Ads</span>
+              <span>Social Media</span>
+              <span>Canva</span>
+              <span>WordPress</span>
+              <span>Lead Generation</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Remote Work
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Virtual Assistance</span>
+              <span>Web Research</span>
+              <span>Administrative Support</span>
+              <span>Online Communication</span>
+              <span>Remote Coordination</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Development Areas
+            </h3>
+
+            <div class="skill-tags">
+
+              <span>Power BI</span>
+              <span>Advanced Excel</span>
+              <span>MEAL</span>
+              <span>Project Management</span>
+              <span>Leadership</span>
+
+            </div>
+
+          </div>
+
 
         </div>
 
@@ -1059,103 +2242,67 @@
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
-
-    <section class="section section-soft">
+    <!-- =======================================================
+         EDUCATION
+         ======================================================= -->
+    <section class="section section-light">
 
       <div class="container">
 
-        <div class="centered">
+        <div class="section-heading">
 
-          <p class="eyebrow">EDUCATION & TRAINING</p>
+          <span class="eyebrow">
+            EDUCATION & TRAINING
+          </span>
 
           <h2>
-            Continuous professional development.
+            Academic & Professional Learning
           </h2>
 
         </div>
 
 
-        <div class="credential-grid">
+        <div class="education-grid">
 
 
-          <article class="credential">
+          <div class="education-card">
 
-            <span>EDUCATION</span>
-
-            <h3>Master of Social Science</h3>
-
-            <p>
-              National University / Rangpur Carmichael College, Rangpur
-            </p>
-
-          </article>
-
-
-          <article class="credential">
-
-            <span>DIGITAL</span>
-
-            <h3>Digital Marketing</h3>
+            <h3>
+              Master of Social Science
+            </h3>
 
             <p>
-              Professional digital marketing training and practical online application.
+              National University
             </p>
 
-          </article>
+          </div>
 
 
-          <article class="credential">
+          <div class="education-card">
 
-            <span>DIGITAL</span>
-
-            <h3>Graphic Design</h3>
+            <h3>
+              Carmichael College
+            </h3>
 
             <p>
-              Professional graphic design training and Canva-based content development.
+              Academic Background
             </p>
 
-          </article>
+          </div>
 
 
-          <article class="credential">
+          <div class="education-card">
 
-            <span>TRAINING</span>
-
-            <h3>Master Trainer — Business Development</h3>
+            <h3>
+              Professional Training
+            </h3>
 
             <p>
-              Training of Trainers and business development.
+              Digital Marketing, Employment Development,
+              Project Coordination and Professional Skills.
             </p>
 
-          </article>
-
-
-          <article class="credential">
-
-            <span>TRAINING</span>
-
-            <h3>Entrepreneurship Development</h3>
-
-            <p>
-              Practical entrepreneurship and business development.
-            </p>
-
-          </article>
-
-
-          <article class="credential">
-
-            <span>PROFESSIONAL</span>
-
-            <h3>MEAL • HR • Report Writing</h3>
-
-            <p>
-              Monitoring, Evaluation, Accountability & Learning,
-              HR Administration and Report Writing.
-            </p>
-
-          </article>
+          </div>
 
 
         </div>
@@ -1165,75 +2312,82 @@
     </section>
 
 
-    <!-- ================= IMPACT ================= -->
-
+    <!-- =======================================================
+         IMPACT
+         ======================================================= -->
     <section class="section">
 
       <div class="container">
 
-        <div class="impact-box">
+        <div class="section-heading">
 
-          <div>
+          <span class="eyebrow">
+            IMPACT
+          </span>
 
-            <p class="eyebrow">PROFESSIONAL IMPACT</p>
+          <h2>
+            Work That Connects People With Opportunity
+          </h2>
 
-            <h2>
-              Experience that demonstrates reliability and coordination.
-            </h2>
+          <p>
+            My professional work is focused on helping people
+            develop skills, access employment opportunities and
+            connect with relevant stakeholders.
+          </p>
 
-            <p>
-              Professional experience developed through employment
-              services, youth support, employer engagement, project
-              coordination and training.
-            </p>
+        </div>
+
+
+        <div class="impact-grid">
+
+          <div class="impact-card">
+
+            <strong>
+              1,900+
+            </strong>
+
+            <span>
+              Youth Reached
+            </span>
 
           </div>
 
 
-          <div class="impact-list">
+          <div class="impact-card">
 
-            <div>
+            <strong>
+              500+
+            </strong>
 
-              <strong>1,900+</strong>
+            <span>
+              Placements
+            </span>
 
-              <span>
-                Youth supported through career and employability services
-              </span>
-
-            </div>
-
-
-            <div>
-
-              <strong>500+</strong>
-
-              <span>
-                Graduates supported toward employment
-              </span>
-
-            </div>
+          </div>
 
 
-            <div>
+          <div class="impact-card">
 
-              <strong>200+</strong>
+            <strong>
+              200+
+            </strong>
 
-              <span>
-                Employer partnerships
-              </span>
+            <span>
+              Employer Partnerships
+            </span>
 
-            </div>
+          </div>
 
 
-            <div>
+          <div class="impact-card">
 
-              <strong>150+</strong>
+            <strong>
+              11+
+            </strong>
 
-              <span>
-                Industry visits coordinated
-              </span>
-
-            </div>
+            <span>
+              Years Experience
+            </span>
 
           </div>
 
@@ -1244,47 +2398,109 @@
     </section>
 
 
-    <!-- ================= CONTACT CTA ================= -->
-
-    <section class="section cta-section" id="contact">
+    <!-- =======================================================
+         CONTACT
+         ======================================================= -->
+    <section class="section section-light" id="contact">
 
       <div class="container">
 
-        <div class="cta">
+        <div class="contact-grid">
 
-          <div>
 
-            <p class="eyebrow">AVAILABLE FOR REMOTE OPPORTUNITIES</p>
+          <div class="contact-content">
+
+            <span class="eyebrow">
+              CONTACT
+            </span>
 
             <h2>
-              Looking for a reliable remote team member?
+              Let's Work Together
             </h2>
 
             <p>
-              I am open to BPO, Virtual Assistant, Data Entry,
-              Web Research, Lead Generation, Administrative Support
-              and Digital Marketing opportunities.
+              I am open to professional opportunities involving
+              employment support, project coordination, data quality,
+              digital marketing, remote BPO, virtual assistance,
+              research and administrative support.
             </p>
+
+
+            <div class="contact-links">
+
+              <a href="mailto:hemromselaus@gmail.com">
+                hemromselaus@gmail.com
+              </a>
+
+              <a href="tel:+8801753630079">
+                +880 1753 630079
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/selaus-hemrom/"
+                target="_blank"
+                rel="noopener"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://www.upwork.com/freelancers/~01222e57af9a19b006"
+                target="_blank"
+                rel="noopener"
+              >
+                Upwork
+              </a>
+
+            </div>
 
           </div>
 
 
-          <div class="cta-actions">
+          <div class="contact-card">
+
+            <h3>
+              Available for
+            </h3>
+
+            <ul>
+
+              <li>
+                Remote BPO
+              </li>
+
+              <li>
+                Virtual Assistant
+              </li>
+
+              <li>
+                Data Entry
+              </li>
+
+              <li>
+                Web Research
+              </li>
+
+              <li>
+                Lead Generation
+              </li>
+
+              <li>
+                Digital Marketing
+              </li>
+
+              <li>
+                Administrative Support
+              </li>
+
+            </ul>
+
 
             <a
-              href="mailto:hemromselaus@gmail.com?subject=Remote%20Job%20Opportunity"
+              href="mailto:hemromselaus@gmail.com"
               class="btn btn-primary"
             >
-              Email Me
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/selaus-hemrom/"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-ghost"
-            >
-              LinkedIn Profile
+              Contact Me →
             </a>
 
           </div>
@@ -1298,136 +2514,31 @@
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
 
-  <footer>
+    <div class="container footer-content">
 
-    <div class="container">
+      <div>
 
-      <div class="footer-grid">
+        <strong>
+          Selaus Hemrom
+        </strong>
 
-
-        <div>
-
-          <a href="#home" class="brand">
-
-            <span class="brand-mark">SH</span>
-
-            <span class="brand-text">
-
-              <strong>SELAUS HEMROM</strong>
-
-              <small>
-                Remote Work • BPO • Digital
-              </small>
-
-            </span>
-
-          </a>
-
-          <p>
-            Remote BPO, Virtual Assistant, Data Entry, Web Research,
-            Lead Generation, Administrative Support and Digital Marketing.
-          </p>
-
-          <p>
-            Chattogram, Bangladesh
-          </p>
-
-        </div>
-
-
-        <div>
-
-          <h4>Remote Services</h4>
-
-          <a href="#remote-services">Data Entry</a>
-          <a href="#remote-services">Virtual Assistant</a>
-          <a href="#remote-services">Web Research</a>
-          <a href="#remote-services">Lead Generation</a>
-          <a href="#remote-services">Digital Marketing</a>
-
-        </div>
-
-
-        <div>
-
-          <h4>Professional</h4>
-
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#portfolio">Portfolio</a>
-
-          <a
-            href="https://www.linkedin.com/in/selaus-hemrom/"
-            target="_blank"
-            rel="noopener"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://www.upwork.com/freelancers/~01222e57af9a19b006"
-            target="_blank"
-            rel="noopener"
-          >
-            Upwork
-          </a>
-
-        </div>
-
-
-        <div>
-
-          <h4>Contact</h4>
-
-          <a href="mailto:hemromselaus@gmail.com">
-            hemromselaus@gmail.com
-          </a>
-
-          <a href="tel:+8801753630079">
-            +880 1753 630079
-          </a>
-
-          <a
-            href="https://wa.me/8801753630079"
-            target="_blank"
-            rel="noopener"
-          >
-            WhatsApp
-          </a>
-
-          <a
-            href="https://selausacademy.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            Selaus Academy
-          </a>
-
-          <a
-            href="https://selaus-digital-solutions.netlify.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            Selaus Digital Solutions
-          </a>
-
-        </div>
-
+        <p>
+          Career Development & Digital Growth
+        </p>
 
       </div>
 
 
-      <div class="footer-bottom">
+      <div>
 
-        <span>
-          © 2026 Selaus Hemrom. All rights reserved.
-        </span>
-
-        <span>
-          Available for Remote Work • Bangladesh
-        </span>
+        <p>
+          © 2026 Selaus Hemrom. All Rights Reserved.
+        </p>
 
       </div>
 
@@ -1436,51 +2547,47 @@
   </footer>
 
 
-  <!-- ================= WHATSAPP ================= -->
-
+  <!-- =========================================================
+       FLOATING WHATSAPP
+       ========================================================= -->
   <a
     href="https://wa.me/8801753630079"
-    class="floating-wa"
+    class="whatsapp-float"
     target="_blank"
     rel="noopener"
-    aria-label="Contact Selaus Hemrom on WhatsApp"
+    aria-label="Chat on WhatsApp"
   >
-    WA
+    WhatsApp
   </a>
 
 
-  <!-- ================= JAVASCRIPT ================= -->
-
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
   <script>
 
-    const menuBtn = document.querySelector(".menu-btn");
-    const header = document.querySelector(".site-header");
-    const navLinks = document.querySelectorAll("nav a");
+    /* Mobile Navigation */
+    const navToggle = document.querySelector(".nav-toggle");
+    const mainNav = document.querySelector(".main-nav");
 
-    if (menuBtn) {
+    if (navToggle && mainNav) {
 
-      menuBtn.addEventListener("click", () => {
+      navToggle.addEventListener("click", function () {
 
-        const isOpen = header.classList.toggle("open");
-
-        menuBtn.setAttribute(
-          "aria-expanded",
-          isOpen ? "true" : "false"
-        );
+        mainNav.classList.toggle("active");
 
       });
 
     }
 
 
-    navLinks.forEach(link => {
+    /* Close mobile menu after clicking a link */
+    document.querySelectorAll(".main-nav a").forEach(function (link) {
 
-      link.addEventListener("click", () => {
+      link.addEventListener("click", function () {
 
-        header.classList.remove("open");
-
-        if (menuBtn) {
-          menuBtn.setAttribute("aria-expanded", "false");
+        if (mainNav) {
+          mainNav.classList.remove("active");
         }
 
       });
@@ -1488,20 +2595,22 @@
     });
 
 
-    const revealElements = document.querySelectorAll(
-      ".service-card, .benefit-card, .portfolio-item, .credential, .timeline-item"
-    );
+    /* Scroll Reveal */
+    const revealElements =
+      document.querySelectorAll(
+        ".section, .service-card, .feature-card, .portfolio-card, .timeline-item, .career-highlight-card, .career-panel, .career-metric, .evidence-card"
+      );
 
 
     const observer = new IntersectionObserver(
 
-      entries => {
+      function (entries) {
 
-        entries.forEach(entry => {
+        entries.forEach(function (entry) {
 
           if (entry.isIntersecting) {
 
-            entry.target.classList.add("show");
+            entry.target.classList.add("visible");
 
             observer.unobserve(entry.target);
 
@@ -1512,13 +2621,13 @@
       },
 
       {
-        threshold: 0.12
+        threshold: 0.08
       }
 
     );
 
 
-    revealElements.forEach(element => {
+    revealElements.forEach(function (element) {
 
       element.classList.add("reveal");
 
@@ -1527,6 +2636,7 @@
     });
 
   </script>
+
 
 </body>
 </html>
